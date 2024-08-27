@@ -256,8 +256,9 @@ class AccordionSection extends StatelessWidget with CommonParams {
                   Expanded(
                     flex: 10,
                     child: Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: leftIcon == null ? 0 : 15),
+                      padding: headerPadding ??
+                          EdgeInsets.symmetric(
+                              horizontal: leftIcon == null ? 0 : 15),
                       child: header,
                     ),
                   ),
